@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Computer Quiz</title>
+    </head>
+    <body>
+        <h1>What kind of computer should you buy?</h1>
+        <form>
+        <section>
+            <fieldset>
+                <p>What is your budget...roughly.</p>
+                <div>
+                    <input type="radio" id="lessThanThousand" name="budget" value="pc" />
+                    <label for="lessThanThousand">Less than $1,000</label>
+                </div>
+                <div>
+                    <input type="radio" id="greaterThanThousand" name="budget" value="mac" />
+                    <label for="greaterThanThousand">Greater than $1,000</label>
+                </div>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <p>Laptop or Desktop</p>
+                <div>
+                    <input type="radio" id="laptop" name="hardwareType" value="mac" />
+                    <label for="laptop">Laptop</label>
+                </div>
+                <div>
+                    <input type="radio" id="desktop" name="hardwareType" value="pc" />
+                    <label for="desktop">Desktop</label>
+                </div>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <p>How much do you want to customize?</p>
+                <div>
+                    <input type="radio" id="customizeMuch" name="customization" value="pc" />
+                    <label for="customizeMuch">I need to be able to customize as much as I want.</label>
+                </div>
+                <div>
+                    <input type="radio" id="customizeLittle" name="customization" value="mac" />
+                    <label for="customization">I don't care about customization. I just need it to work.</label>
+                </div>
+            </fieldset>
+        </section>
+        <input onClick="formSubmit()" type="submit" value="submit"/>
+        </form>
+    </body>
+    <script src="script.js">
+    </script>
+</html>
